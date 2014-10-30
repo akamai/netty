@@ -400,7 +400,7 @@
     <jetty.alpn.path>${settings.localRepository}/org/mortbay/jetty/alpn/alpn-boot/${jetty.alpn.version}/alpn-boot-${jetty.alpn.version}.jar</jetty.alpn.path>
     <argLine.common>
       -server
-      -dsa -da -ea:io.netty...
+      -dsa -da -ea:io.netty... -Xmx2g
       -XX:+AggressiveOpts
       -XX:+TieredCompilation
       -XX:+UseBiasedLocking
